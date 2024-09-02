@@ -1,0 +1,25 @@
+<mat-expansion-panel
+  hideToggle
+  #panel="matExpansionPanel"
+  (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false"
+>
+  <mat-expansion-panel-header expandedHeight="47px" collapsedHeight="47px"  >
+    <mat-panel-title>
+      @if (isModule) {
+        <mat-icon ng-if aria-hidden="false" aria-label="Example home icon" fontIcon="view_module"></mat-icon>
+      }@else if(isSubModule) {
+        <mat-icon ng-if aria-hidden="false" aria-label="Example home icon" fontIcon="width_normal"></mat-icon>
+      }
+       <span
+        >{{ title }} 
+      </span>
+    </mat-panel-title>
+    @if (panelOpenState) {
+      <mat-icon>remove</mat-icon>
+    }@else {
+      <mat-icon>add</mat-icon>
+    }
+  </mat-expansion-panel-header>
+  <ng-content></ng-content>
+</mat-expansion-panel>

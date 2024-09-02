@@ -1,0 +1,61 @@
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.mat-expansion-panel-header.mat-expanded:focus,
+.mat-expansion-panel-header.mat-expanded::selection {
+  background-color: #fff;
+}
+.mat-expansion-panel .mat-expansion-panel-header-title {
+  color: white;
+  align-items: center;
+  font-weight: 400 !important;
+}
+
+.mat-panel-title:hover {
+  background-color: #ffff;
+  color: #e1111c !important;
+}
+
+.mat-expansion-panel .mat-expansion-panel-header-description {
+  font-weight: lighter;
+  color: white;
+}
+
+.mat-expansion-panel-header {
+  color: white !important;
+  background-color: rgba(#3e3e3e, 1);
+}
+
+.mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
+  background-color: #ffff;
+  color: #e1111c !important;
+}
+.mat-expansion-panel-content:hover {
+  background-color: #ffff;
+  color: #e1111c !important;
+}
+
+.mat-expansion-panel:not(.mat-expanded) {
+  border-radius: 8px !important;
+  margin: 8px 0;
+}
+
+.mat-expansion-panel.mat-expanded .mat-expansion-panel-header {
+  border-radius: 8px 8px 0 0 !important;
+}
+span {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.mat-expansion-panel-header:hover {
+  background-color: #ffff !important;
+  border-radius: 8px !important;
+  color: #e1111c !important;
+  span {
+    color: #e1111c !important;
+  }
+  mat-icon {
+    color: #e1111c !important;
+  }
+}

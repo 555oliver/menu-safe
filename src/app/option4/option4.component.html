@@ -1,0 +1,37 @@
+<div class="container">
+    <mat-card class="mat-card-style">
+      <mat-card-title class="title_center">
+       Modulos
+      </mat-card-title>
+      <form>
+        <input type="text" id="fname" name="fname" placeholder="Buscar...">
+      </form>
+        <mat-accordion displayMode="default" multi>
+          @for (item of modules; track $index) {
+            <app-custom-expansion-panel-4 [title]="item.title" subtitle="" theme="primary" [isModule]="true"   >
+              @for (itemSub of item.subModule; track $index) {
+                <app-custom-expansion-panel-4
+                  [title]="itemSub.title"
+                  subtitle=""
+                  theme="primary"
+                  [isSubModule]="true"
+                  
+                >
+                @for (routes of itemSub.routes; track $index) {
+                  <ul>
+                    <li>
+                       <a href="#"> <mat-icon ng-if aria-hidden="false" aria-label="Example home icon" fontIcon="link"></mat-icon> {{routes.title}}</a>
+                    </li>
+                  </ul>
+                }
+                </app-custom-expansion-panel-4>
+              }
+      
+            </app-custom-expansion-panel-4>
+          }
+      
+   
+        </mat-accordion>
+      </mat-card>
+</div>
+  

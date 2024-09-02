@@ -1,0 +1,49 @@
+.container{
+    width: 40%;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    height: 38px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+  input[type=text]::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .mat-mdc-card {
+    background-color: #dfdddd !important;
+    padding: 15px !important;
+    border-radius: 9px !important;
+    box-shadow: 4px 4px 4px #ccc !important;
+  }
+  .mat-mdc-card-title{
+    font-weight: 600 !important;
+    font-family: sans-serif !important;
+  }
+  
+  ul li a {
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  ul li a:hover {color:#EF7D00 ;}
+  ul li{
+    list-style: none;
+  }
+  ul {
+    margin-top: 10px;
+    padding: 13px;
+    border-bottom: 1px solid #ccc
+  }
+  .title_center {
+    text-align: center;
+  }
+  
